@@ -10,12 +10,30 @@ html,body
 h1{ text-align:center; }
 h1, h2, a, p{ font-family:MarkerFeltRegular }
 
+ul{ padding:0; list-style-type: none; }
+
 .navbar-active{ color:purple; }
 .navbar-item{ margin-right:3%; }
 
-#leftColumn{ width:10%; float:left; background-color:#c9db53; border-style:hidden solid; border-width:2px; padding-left:10px; padding-top:10px; height:100%; }
-#navbar{ text-align:center; background-image:url('../img/thoughtBubble.png'); background-repeat: no-repeat; background-size: 100% 100%; padding-bottom:10%; padding-top:10%; }
+#leftColumn{ width:10%; float:left; background-color:#c9db53; border-style:hidden solid; border-width:2px; padding:10px; height:100%; }
+#navbar{ text-align:center; background-image:url('../img/thoughtBubble.png'); background-repeat: no-repeat; background-size: 70% 100%; padding-bottom:10%; padding-top:10%; background-position-x:center }
 #rightColumn{ width:85%; float:right; }
+
+@media screen and (max-device-width:1700px){
+	#navbar{ text-align:center; background-image:url('../img/thoughtBubble.png'); background-repeat: no-repeat; background-size: 100% 120%; }
+}
+@media screen and (min-device-width:800px) and (max-device-width:1000px){
+	#navbar{ text-align:center; background-image:url('../img/thoughtBubble.png'); background-repeat: no-repeat; background-size: 130% 120%; }
+}
+@media screen and (min-device-width:500px) and (max-device-width:800px){
+	#navbar{ text-align:center; background-image:url('../img/thoughtBubble.png'); background-repeat: no-repeat; background-size: 150% 120%; }
+}
+@media screen and (max-device-width:500px){
+	#navbar{ text-align:center; background-image:url('../img/thoughtBubble.png'); background-repeat: no-repeat; background-size: 200% 100%; }
+	#leftColumn{ width:100%; height:auto; float:none; }
+	#rightColumn{ width:100%; float:none;}
+	#gigi{ width:100%; }
+}
 
 @font-face {
   font-family: MarkerFeltRegular;
